@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exemplo de Layout - Bootstrap 5</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<style>
+		.topo {
+			background-image: url('images/');
+			background-size: cover;
+			background-position: center;
+		}
+	</style>
+	<script>
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+		    document.getElementById("topo").style.display = "none";
+		  } else {
+		    document.getElementById("topo").style.display = "block";
+		  }
+		}
+	</script>
+</head>
+<body>
+<header class="topo shadow-sm sticky-top" id="topo">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-4">
+				<img src="images/rmc-1.jpg" class="img-fluid rounded" style="max-height: 100px;" alt="Logotipo">
+			</div>
+			<div class="col-8 ">
+				<nav class="navbar navbar-light d-sm-none justify-content-end">
+				  <div class="container-fluid justify-content-end">
+				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile" >
+				      <span class="navbar-toggler-icon"></span>
+				    </button>
+				  </div>
+				</nav>
+				<div class="d-none d-sm-block">
+					<nav class="nav justify-content-end align-items-center" style="height: 100px;">
+						<a class="nav-link" href="#topo" style="color: black; font-size: 1.2em;">Home</a>
+						<a class="nav-link" href="#quem" style="color: black; font-size: 1.2em;">Quem Sou</a>
+						<a class="nav-link" href="#cursos" style="color: black; font-size: 1.2em;">Cursos</a>
+						<a class="nav-link" href="#clientes" style="color: black; font-size: 1.2em;">Clientes</a>
+						<a class="nav-link" href="#contato" style="color: black; font-size: 1.2em;">Contato</a>
+						<a class="btn btn-success rounded-pill" href="#" style="font-size: 1.2em;">(51) 5555-55555</a>
+					</nav>
+				
+				</div>
+
+			</div>
+			<div class="col-12">
+				<div class="collapse" id="menuMobile">
+				<nav class="nav flex-column justify-content-end ">
+					<a class="nav-link" href="#topo">Home</a>
+					<a class="nav-link" href="#quem">Quem Sou</a>
+					<a class="nav-link" href="#cursos">Cursos</a>
+					<a class="nav-link" href="#clientes">Clientes</a>
+					<a class="nav-link" href="#contato">Contato</a>
+					<a class="btn btn-success rounded-pill" href="#">(51) 6666-6666</a>
+				</nav>
+				</div>
+			</div>
+			
+
+		</div>
+	</div>
+</header>
+
+<div id="music-player">
+	<audio controls>
+	  <source src="audio/examine.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+</div>
+
+<section class="banner-topo">
+	<div class="container">
+	<div class="row align-items-center">
+		<div class="col-12 col-sm-6 order-2 order-sm-2">
+			<img src="images/brasil-4.jpg" class="img-fluid rounded img-destaque d-block mx-auto mt-3" alt="RMC Brasil">
+		</div>
+		<div class="col-12 col-sm-6 order-sm-6 align-self-center">
+			<h1 class="cor-tema">RMC BARSIL</h1>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			<a href="#" class="btn btn-primary rounded-pill btn-lg">Saiba Mais</a>
+		</div>
+	</div>
+	</div>
+</section>
+
+</section>
+<section class="destaque">
+	<div class="container mt-5 mb-5">
+		<div class="row">
+			<div class="col-6 col-sm-3 text-center">
+				<img src="images/rmc-2.jpg" class="img-fluid rounded d-block mx-auto" alt="destaque">
+				<h4 class="cor-tema mt-3">Título</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+			</div>
+			<div class="col-6 col-sm-3 text-center">
+				<img src="images/rmc-3.jpg" class="img-fluid rounded d-block mx-auto" alt="destaque">
+				<h4 class="cor-tema mt-3">Título</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+			</div>
+			<div class="col-6 col-sm-3 text-center">
+				<img src="images/rmc-4.jpg" class="img-fluid rounded d-block mx-auto" alt="destaque">
+				<h4 class="cor-tema mt-3">Título</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+			</div>
+			<div class="col-6 col-sm-3 text-center">
+				<img src="images/rmc-5.jpg" class="img-fluid rounded d-block mx-auto" alt="destaque">
+				<h4 class="cor-tema mt-3">Título</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+</section>
+<section class="quem-somos" id="quem">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-7 align-self-center">
+				<p class="h1">Texto em Destaque</p>
+				<p class="w-75">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+				<p class="w-75">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+			</div>
+			<div class="col-12 col-sm-5">
+				<img src="images/brasil-1.jpg" class="img-destaque d-block mx-auto mt-5" alt="RMC Brasil">
+			</div>
+		</div>
+	</div>
+</section>
+<section id="cursos">
+	<div class="container mt-5 mb-5">
+		<div class="row">
+			<div class="col-12 col-sm-4">
+				<div class="card" >
+				  <img src="images/brasi-2.jpg" class="card-img-top" alt="Curso">
+				  <div class="card-body">
+				    <h5 class="card-title">Google Analytics</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				    <a href="#" class="btn btn-primary">Inscreva-se</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-4">
+				<div class="card" >
+				  <img src="images/brasil-3.jpg" class="card-img-top" alt="Curso">
+				  <div class="card-body">
+				    <h5 class="card-title">SEO para Desenvolvedores</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				    <a href="#" class="btn btn-primary">Inscreva-se</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-4">
+				<div class="card" >
+				  <img src="images/brasil-4.jpg" class="card-img-top" alt="Curso">
+				  <div class="card-body">
+				    <h5 class="card-title">Google ADS</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				    <a href="#" class="btn btn-primary">Inscreva-se</a>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="clientes" id="clientes">
+	<div class="container mt-5 mb-5">
+		<div class="row text-center">
+			<div class="col-12">
+				<p class="h3">Conheça Alguns de</p>
+				<h2 class="h1 cor-tema">Nossos Clientes</h2>
+			</div>
+
+	<div id="meuslide" class="carousel carousel-dark carousel slide " data-bs-ride="carousel">
+		
+	<ol class="carousel-indicators">
+		<li data-bs-target="#meuslide" data-bs-slide-to="0" class="active"></li>
+		<li data-bs-target="#meuslide" data-bs-slide-to="1"></li>
+		
+	</ol>
+
+
+	<div class="carousel-inner mt-5">
+		<div class="carousel-item active">
+			<div class="row">
+				<div class="col-6 col-sm-3">
+					<img class="d-block w-100" src="images/rmc-7.jpg" alt="teste">
+				</div>
+				<div class="col-6 col-sm-3">
+					<img class="d-block w-100" src="images/rmc-8.jpg" alt="teste">
+				</div>
+				<div class="col-6 col-sm-3">
+					<img class="d-block w-100" src="images/brasil-4.jpg" alt="teste">
+				</div>
+				<div class="col-6 col-sm-3">
+					<img class="d-block w-100" src="images/brasil-3.jpg" alt="teste">
+				</div>
+			</div>			
+		</div>
+		<div class="carousel-item ">
+			<div class="row">
+				<div class="col-6 col-sm-3">
+					<img class="d-block w-100" src="images/brasi-2.jpg" alt="teste">
+				</div>
+				<div class="col-6 col-sm-3">
+					<img class="d-block w-100" src="images/brasil-1.jpg" alt="teste">
+				</div>
+				<div class="col-6 col-sm-3">
+					<img class="d-block w-100" src="images/rmc-1.jpg" alt="teste">
+				</div>
+				<div class="col-6 col-sm-3">
+					<img class="d-block w-100" src="images/rmc-2.jpg" alt="teste">
+				</div>
+			</div>			
+		</div>
+		
+	<a class="carousel-control-prev" href="#meuslide" role="button" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+		<span class="visually-hidden">Anterior</span>
+	</a>
+	<a class="carousel-control-next" href="#meuslide" role="button" data-bs-slide="next">
+		<span class="carousel-control-next-icon"></span>
+		<span class="visually-hidden">Próximo</span>
+	</a>
+	</div>
+
+	
+</div>
+
+
+		</div>
+	</div>
+</section>
+
+<footer class="rodape" id="contato">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-3 mt-5 mb-5">
+				<h4>Endereço</h4>
+				<p>Endereço Rua XXX, Trumã - Manaus / AM</p>
+			</div>
+			<div class="col-12 col-md-3 mt-5 mb-5">
+				<h4>Contato</h4>
+				<ul class="nav flex-column">
+				  <li class="nav-item">
+				    <a class="nav-link active" aria-current="page" href="#">Active</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#">Link</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#">Link</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+				  </li>
+				</ul>
+			</div>
+			<div class="col-12 col-md-3 mt-5 mb-5">
+				<h4>Contato</h4>
+				<ul class="nav flex-column">
+				  <li class="nav-item">
+				    <a class="nav-link active" aria-current="page" href="#">Active</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#">Link</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#">Link</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+				  </li>
+				</ul>
+			</div>
+			<div class="col-12 col-md-3 mt-5 mb-5">
+				<h4>Contato</h4>
+				<ul class="nav flex-column">
+				  <li class="nav-item">
+				    <a class="nav-link active" aria-current="page" href="#">Active</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#">Link</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#">Link</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+				  </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
