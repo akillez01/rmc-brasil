@@ -21,4 +21,10 @@
 .rodape{
 	color: #fff;
 	background: #000;
+	font-size: 0.8em;
 }
+
+.rodape p {
+	font-size: 0.9em;
+}
+
